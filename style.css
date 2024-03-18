@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(math_bg.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  
+
+  .vowels{
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+
+  .palindrome{
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .tipcal{
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  input {
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 5px 10px;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+hr{
+  border-style:dashed;
+  border-width:2px;
+}
