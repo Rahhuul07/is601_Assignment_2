@@ -15,13 +15,22 @@ function countVowelsAndConsonants() {
   }
   
   function checkPalindrome() {
-    const numbers = document.getElementById("numberInput").value;
-    const reversedNumbers = numbers.split("").reverse().join("");
+    let numberInput = document.getElementById("numberInput").value;
+    let cleanedInput = numberInput.replace(/\s/g, ''); // Remove white spaces
   
-    if (numbers === reversedNumbers) {
-      document.getElementById("palindromeResult").textContent = "It's a palindrome.";
+    let isPalindromic = true;
+  
+    for (let i = cleanedInput.length; i >= 0 ; i--) {
+      if (cleanedInput[i] !== cleanedInput[cleanedInput.length - 1 - i]) {
+        isPalindromic = false;
+        break;
+      }
+    }
+  
+    if (isPalindromic) {
+      document.getElementById("palindromeResult").innerHTML = "Yes, it's a palindrome.";
     } else {
-      document.getElementById("palindromeResult").textContent = "It's not a palindrome.";
+      document.getElementById("palindromeResult").innerHTML = "No, it's not a palindrome.";
     }
   }
   
